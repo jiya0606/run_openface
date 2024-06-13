@@ -17,4 +17,5 @@ How to use:
     e. LOCAL_OUTPUT_DIR should be the path of the folder where the outputted CSVs should be stored
 2. In the terminal, type 'chmod +x process_videos.sh' to make the script executable 
 3. In the terminal, type './process_videos.sh' to run the script
+Note: Occasionally some video frames will be corrupt, in which case the frame-remove.py code will remove the corrupt frame. To find which frame this is, 'cat <filename>.csv | cut -d "," -f 1' prints the frame number for every row in the CSV, meaning the frame after the last frame printed is corrupt.
 
