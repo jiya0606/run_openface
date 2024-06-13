@@ -15,7 +15,7 @@ How to use:
     c. DOCKER_WORKDIR should be the path to the docker bin you are using
     d. DOCKER_OUTPUT should be the path to wherever the outputted CSV is stored (manually running openface once might be required to find this path)
     e. LOCAL_OUTPUT_DIR should be the path of the folder where the outputted CSVs should be stored
-2. In the terminal, type 'chmod +x process_videos.sh' to make the script executable 
-3. In the terminal, type './process_videos.sh' to run the script
+2. In the terminal, type 'chmod +x run_openface/process_videos.sh' to make the script executable 
+3. In the terminal, type './run_openface/process_videos.sh' to run the script
 Note: Occasionally some video frames will be corrupt, in which case the frame-remove.py code will remove the corrupt frame. To find which frame this is, 'cat <filename>.csv | cut -d "," -f 1' prints the frame number for every row in the CSV, meaning the frame after the last frame printed is corrupt.
 
