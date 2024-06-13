@@ -15,3 +15,6 @@ How to use:
     c. DOCKER_WORKDIR should be the path to the docker bin you are using
     d. DOCKER_OUTPUT should be the path to wherever the outputted CSV is stored (manually running openface once might be required to find this path)
     e. LOCAL_OUTPUT_DIR should be the path of the folder where the outputted CSVs should be stored
+2. In the terminal, type 'chmod +x process_videos.sh' to make the script executable 
+3. In the terminal, type './process_videos.sh' to run the script
+
